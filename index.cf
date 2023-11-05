@@ -1,0 +1,8 @@
+html {
+    title: "Introduction"
+    logo: img {src: "./assets/imgs/logo"}
+    js: "./assets/js/jquery.min.js"
+    js: "./assets/js/bootstrap.min.js"
+    css: "./assets/css/bootstrap.min.css"
+    background-color: white;
+}
