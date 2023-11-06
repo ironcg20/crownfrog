@@ -5,4 +5,16 @@ html {
     js: "./assets/js/bootstrap.min.js"
     css: "./assets/css/bootstrap.min.css"
     background-color: white;
+
+    Header extends div{
+        id:header
+        css: [
+            "./assets/css/header.css",
+            "./assets/css/color-style.css"
+        ]
+        text: "This is header"
+    }
+    Content {
+        
+    }
 }
