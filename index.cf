@@ -1,4 +1,4 @@
-html {
+HTML {
     title: "Introduction"
     logo: img {src: "./assets/imgs/logo"}
     js: "./assets/js/jquery.min.js"
@@ -14,7 +14,26 @@ html {
         ]
         text: "This is header"
     }
-    Content {
-        
+    TableView {
+        header: [id, name, sex, address, birthday]
+        model: mVendor
+    }
+
+    TableModel {
+        id: mVendor
+        database: dbShop
+        role: [id, name, sex, address, birthday]   
+    }
+
+    Database {
+        id: dbShop
+        host: root
+        password: ""
+    }
+
+    Column {
+        Row {text:"Name"; input {type: "text}}
+        Row {text:"Genders"; checkbox {} }}
+        Row {text:"addresses"; input {type:"data"}}
     }
 }
