@@ -1,0 +1,10 @@
+import CfCore
+
+namespace Database {
+    Database extends CfObject {
+        dbType: string; // MySQL, SQLite etc
+        dbName: string;
+        dbPassword: string;
+        port: int;
+    }
+}

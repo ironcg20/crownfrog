@@ -1,0 +1,5 @@
+Route {
+    id: login.route
+    type: "GET"  // POST etc
+    controller: LoginController
+}

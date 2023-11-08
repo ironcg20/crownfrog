@@ -1,0 +1,11 @@
+import cfcore 1.0
+
+namespace model {
+    Model extends cfcore {
+        
+    }
+
+    TableModel extends Model {
+        
+    }
+}

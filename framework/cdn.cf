@@ -1,0 +1,14 @@
+namespace cdn {
+    Register(['bootstrap 5.6', 'jquery'])
+    CSS {
+        id: "bootstrap";
+        version: "5.6";
+        href: "http://..."
+    }
+
+    CSS {
+        id: "jquery";
+        version: "2.6.1";
+        href: "http://...."
+    }
+}

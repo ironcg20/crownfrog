@@ -1,0 +1,27 @@
+import CfCore;
+
+namespace html5 {
+    DOM extends CfObject {
+        css: array // array of URLs or CSS objects
+        addCSS
+
+    }
+
+    CSS extends CfObject{}
+
+    Html5 extends DOM{
+        title: string
+        link: array<string> or array<CSS>
+        responsive: boolean
+    }
+
+    Document extends CfObject{
+
+    }
+
+    Table {}
+
+    Div {}
+    
+
+}

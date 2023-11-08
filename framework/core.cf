@@ -1,10 +1,39 @@
-View {
+// This file is core engine for the framework
+namespace CfCore 1.0{
+    CfObject {
+        id: string
+        name: string
+        display: 
+
+        CfObject(param=null); // create a new object
+        init(); // initialize the object
+        clone(); // clone the object
+    }
+    
+    View extends CfObject{
+
+    }
+
+    Model extends CfObject{
+        authenticatable: boolean  // Defaults to true
+        elements: {'id': 'protected',
+                    'name': 'public', 
+                    'description': 'public',
+                    'value': 'public'} // Defaults to null
+    }
+
+    Route extends CfObject{
+        id: string
+        type: string
+        controller: Controller.login();
+    }
+
+    Controller {
+        middleware: Middleware;
+    }
 
 }
 
-Model {
-
-}
 
 
 

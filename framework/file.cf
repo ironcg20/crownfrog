@@ -1,0 +1,12 @@
+namespace file {
+    File {
+        File(url);
+        id: string;
+        url: string;
+    }
+
+    FileReader {
+        file: File;
+        onload: Event
+    }
+}
