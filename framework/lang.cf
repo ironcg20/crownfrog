@@ -1,0 +1,4 @@
+Lang {
+    items: ['En', 'Fr'];
+    content: ['File', 'file'];    
+}

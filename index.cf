@@ -5,43 +5,45 @@ import './framework/model'
 import html5
 import "https://code.jquery.com/jquery-3.5.1.slim.min.js"
 
-html5 {
-    title: "Introduction"
-    logo: img {src: "./assets/imgs/logo"}
-    js: "./assets/js/jquery.min.js"
-    js: "./assets/js/bootstrap.min.js"
-    css: "./assets/css/bootstrap.min.css"
-    background-color: white;
+Application {
+    html5 {
+        title: "Introduction"
+        logo: img {src: "./assets/imgs/logo"}
+        css: "./assets/css/bootstrap.min.css"
+        background-color: white;
 
-    Header extends div{
-        id:header
-        css: [
-            "./assets/css/header.css",
-            "./assets/css/color-style.css"
-        ]
-        text: "This is header"
-    }
+        Div{
+            id:header
+            css: [
+                "./assets/css/header.css",
+                "./assets/css/color-style.css"
+            ]
+            text: "This is header"
+        }
 
-    TableView {
-        header: [id, name, sex, address, birthday]
-        model: mVendor
-    }
+        TableView {
+            header: [id, name, sex, address, birthday]
+            model: mVendor
+        }
 
-    TableModel {
-        id: mVendor
-        database: dbShop
-        role: [id, name, sex, address, birthday]   
-    }
+        TableModel {
+            id: mVendor
+            database: dbShop
+            table: "vendors"
+            role: [id, name, sex, address, birthday]   
+        }
 
-    Database {
-        id: dbShop
-        host: root
-        password: ""
-    }
+        Database {
+            id: dbShop
+            host: root
+            password: ""
+        }
 
-    Column {
-        Row {text:"Name"; input {type: "text}}
-        Row {text:"Genders"; checkbox {} }}
-        Row {text:"addresses"; input {type:"data"}}
+        Column {
+            Row {text:"Name"; input {type: "text}}
+            Row {text:"Genders"; checkbox {} }}
+            Row {text:"addresses"; input {type:"data"}}
+        }
     }
 }
+

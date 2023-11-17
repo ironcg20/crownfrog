@@ -2,10 +2,13 @@ import cfcore 1.0
 
 namespace model {
     Model extends cfcore {
-        
+        select (array) {
+            return Model;
+        }
+        where
     }
 
     TableModel extends Model {
-        
+
     }
-}
+}   
